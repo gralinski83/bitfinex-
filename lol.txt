@@ -1,0 +1,5 @@
+Strona glowna: informacje o naszym projekcie
+Podstrona: ktora bedzie podstrona kontaktowa
+Logowanie: formularz logowania
+Strona po zalogowaniu: order book z mozliwoscia filtrowania
+

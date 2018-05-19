@@ -1,0 +1,20 @@
+{# pobieramy zawartosc pliku layout.twig #}
+{% extends 'layout.twig' %}
+
+{# blok ktory nadpisujemy z pliky layout.twig#}
+{% block bartek %}
+{# wtym miejscu wyswietlamy nasze zmienne zdefiniowane w pliku index.js #}
+<h1>{{title}} - {{date}}</h1>
+<p>{{description}}</p>
+{% endblock %}
+
+{% block login %}
+ {% if error %} <p>Blad logowania</p> {% endif %}
+  <form action="/" method="post">
+    <input type="text" name="login" placeholder="login" required />
+    <input type="password" name="pass" placeholder="haslo" required />
+    
+    <input type="submit" value="Wyślij" />
+  </form>
+{% endblock %}
+

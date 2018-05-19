@@ -1,0 +1,39 @@
+{% extends 'layout.twig' %}
+
+{% block bartek %}
+
+<table>
+<tr>
+  <th>Cena</th>
+  <th>Dostepna ilosc</th>
+</tr>
+  
+{% for offer in orderbook.bids %}
+  <tr>
+    <td>$ {{ offer.price }}</td>
+    <td>{{ offer.amount }}</td>
+  </tr>
+  
+{% endfor %}
+
+</table>
+
+<table>
+<tr>
+  <th>Cena</th>
+  <th>Dostepna ilosc</th>
+</tr>
+  
+{% for offer in orderbook.asks %}
+  <tr>
+    <td>$ {{ offer.price }}</td>
+    <td>{{ offer.amount }}</td>
+  </tr>
+  
+{% endfor %}
+
+</table>
+
+{% endblock %}
+
+
